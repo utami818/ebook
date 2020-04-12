@@ -1,0 +1,6366 @@
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    overflow: hidden;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.wowbook {
+    color: #333;
+}
+
+.wowbook-page-content {
+    background: white;
+}
+
+.wowbook-left .wowbook-gutter-shadow {
+    background-image: url('../images/page_left_background.png');
+    opacity: 0.5;
+    width: 60px;
+}
+
+.wowbook-right .wowbook-gutter-shadow {
+    background-image: url('../images/page_right_background.png');
+    background-position: 0 0;
+    width: 75px;
+}
+
+body {
+    color: black;
+    padding: 10% 10%;
+    background: #ffffff url("../images/02.jpg");
+    background-size: cover;
+    background-position: 50% top;
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+#container {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    height: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding-top: 86px;
+    padding-bottom: 20px;
+}
+
+h1,
+h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: 'News Cycle', sans-serif;
+    text-shadow: 0 1px 0 rgba(10, 10, 10, 0.5);
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+nav {
+    height: 46px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 2147483647;
+    zoom: 1;
+}
+
+nav a {
+    display: block;
+    height: 46px;
+    width: 48px;
+    padding: 0;
+    background: #000000 no-repeat;
+    background-position: 8px 7px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+nav #back-home {
+    background-image: url(../images/icons/arrow_left.png);
+}
+
+nav #zoomin {
+    background-image: url(../images/icons/zoom_in.png);
+}
+
+nav #zoomout {
+    background-image: url(../images/icons/zoom_out.png);
+}
+
+nav #first {
+    background-image: url(../images/icons/arrow_double_left.png);
+}
+
+nav #last {
+    background-image: url(../images/icons/arrow_double_right.png);
+}
+
+nav #next {
+    background-image: url(../images/icons/arrow_right.png);
+}
+
+nav #back {
+    background-image: url(../images/icons/arrow_left.png);
+}
+
+nav #slideshow {
+    background-image: url(../images/icons/slideshow_play.png);
+}
+
+nav #slideshow.wowbook-disabled {
+    background-image: url(../images/icons/slideshow_pause.png);
+}
+
+nav #flipsound {
+    background-image: url(../images/icons/sound_on.png);
+}
+
+nav #flipsound.wowbook-disabled {
+    background-image: url(../images/icons/sound_off.png);
+}
+
+nav #thumbs {
+    background-image: url(../images/icons/thumbs.png);
+}
+
+nav #fullscreen {
+    background-image: url(../images/icons/fullscreen_on.png);
+}
+
+nav #fullscreen.wowbook-disabled {
+    background-image: url(../images/icons/fullscreen_off.png);
+}
+
+nav a:hover {
+    background-color: #2C2C2C;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fcfcfc), color-stop(100%, #f0f0f0));
+    background-image: -webkit-linear-gradient(top, #555555, #222222);
+    background-image: -moz-linear-gradient(top, #555555, #222222);
+    background-image: -ms-linear-gradient(top, #555555, #222222);
+    background-image: -o-linear-gradient(top, #555555, #222222);
+    background-image: linear-gradient(top, #555555, #222222);
+}
+
+nav a:active,
+nav a:hover,
+nav a {
+    outline: none;
+}
+
+@media screen and (max-width: 568px),
+screen and (max-height: 380px) {
+    #container {
+        padding-top: 35px;
+        padding-bottom: 5px;
+    }
+    nav {
+        margin: auto;
+        top: 0px;
+    }
+    nav li {
+        height: 32px;
+    }
+    nav li a {
+        background-size: 50% 50%;
+        height: 32px;
+        width: 32px;
+    }
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    #click_to_open {
+        display: none;
+    }
+}
+
+.wowbook-page-content {
+    padding: 1em;
+}
+
+#main {
+    position: relative;
+}
+
+#click_to_open {
+    position: absolute;
+    left: 25%;
+    margin-left: -180px;
+    top: 50%;
+    margin-top: -50px;
+}
+
+.js #features {
+    margin-left: -12000px;
+}
+
+.wowbook-page {
+    margin: auto;
+}
+
+.wowbook-page h1 {
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 32px;
+    color: white;
+    background: #aa2b2b;
+    line-height: 1.5;
+    padding: 5px 5px 0px;
+    margin: 0;
+}
+
+.wowbook-page .subtitle {
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    padding: 5px 5px 0px;
+    font-style: italic;
+}
+
+.wowbook-page p,
+.wowbook-page ul {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 24px;
+    margin-top: 0.5em;
+}
+
+.wowbook-page li {
+    list-style: none;
+}
+
+#coversbmptn {
+    background: #ffffff url("../images/coversbmipa.jpeg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm1 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_001.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm2 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_002.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm3 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_003.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm4 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_004.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm5 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_005.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm6 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_006.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm7 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_007.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm8 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_008.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm9 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_009.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm10 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_010.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm11 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_011.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm12 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_012.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm13 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_013.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm14 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_014.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm15 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_015.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm16 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_016.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm17 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_017.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm18 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_018.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm19 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_019.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm20 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_020.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm21 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_021.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm22 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_022.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm23 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_023.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm24 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_024.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm25 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_025.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm26 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_026.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm27 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_027.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm28 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_028.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm29 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_029.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm30 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_030.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm31 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_031.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm32 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_032.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm33 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_033.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm34 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_034.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm35 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_035.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm36 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_036.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm37 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_037.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm38 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_038.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm39 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_039.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm40 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_040.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm41 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_041.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm42 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_042.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm43 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_043.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm44 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_044.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm45 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_045.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm46 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_046.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm47 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_047.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm48 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_048.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm49 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_049.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm50 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_050.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm51 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_051.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm52 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_052.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm53 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_053.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm54 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_054.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm55 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_055.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm56 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_056.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm57 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_057.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm58 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_058.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm59 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_059.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm60 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_060.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm61 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_061.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm62 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_062.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm63 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_063.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm64 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_064.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm65 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_065.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm66 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_066.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm67 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_067.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm68 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_068.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm69 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_069.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm70 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_070.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm71 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_071.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm72 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_072.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm73 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_073.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm74 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_074.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm75 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_075.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm76 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_076.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm77 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_077.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm78 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_078.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm79 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_079.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm80 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_080.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm81 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_081.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm82 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_082.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm83 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_083.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm84 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_084.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm85 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_085.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm86 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_086.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm87 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_087.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm88 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_088.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm89 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_089.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm90 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_090.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm91 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_091.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm92 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_092.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm93 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_093.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm94 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_094.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm95 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_095.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm96 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_096.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm97 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_097.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm98 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_098.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm99 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_099.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm100 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_100.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm101 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_101.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm102 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_102.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm103 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_103.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm104 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_104.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm105 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_105.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm106 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_106.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm107 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_107.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm108 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_108.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm109 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_109.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm1110 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_110.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm11011 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_111.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm112 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_112.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm113 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_113.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm114 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_114.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm115 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_115.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm116 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_116.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm117 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_117.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm118 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_118.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm119 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_119.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm120 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_120.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm121 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_121.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm122 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_122.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm123 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_123.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm124 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_124.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm125 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_125.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm126 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_126.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm127 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_127.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm128 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_128.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm129 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_129.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm130 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_130.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm131 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_131.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm132 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_132.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm133 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_133.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm134 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_134.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm135 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_135.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm136 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_136.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm137 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_137.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm138 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_138.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm139 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_139.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm140 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_140.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm141 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_141.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm142 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_142.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm143 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_143.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm144 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_144.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm145 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_145.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm146 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_146.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm147 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_147.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm148 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_148.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm149 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_149.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm150 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_150.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm151 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_151.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm152 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_152.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm153 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_153.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm154 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_154.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm155 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_155.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm156 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_156.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm157 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_157.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm158 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_158.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm159 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_159.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm160 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_160.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm161 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_161.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm162 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_162.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm163 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_163.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm164 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_164.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm165 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_165.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm166 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_166.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm167 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_167.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm168 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_168.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm169 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_169.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm170 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_170.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm171 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_171.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm172 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_172.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm173 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_173.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm174 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_174.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm175 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_175.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm176 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_176.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm177 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_177.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm178 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_178.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm179 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_179.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm180 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_180.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm181 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_181.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm182 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_182.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm183 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_183.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm184 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_184.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm185 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_185.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm186 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_186.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm187 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_187.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm188 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_188.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm189 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_189.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm190 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_190.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm191 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_191.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm192 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_192.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm193 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_193.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm194 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_194.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm195 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_195.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm196 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_196.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm197 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_197.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm198 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_198.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm199 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_199.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm200 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_200.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm201 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_201.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm202 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_202.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm203 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_203.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm204 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_204.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm205 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_205.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm206 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_206.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm207 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_207.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm208 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_208.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm209 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_209.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm210 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_210.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm211 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_211.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm212 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_212.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm213 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_213.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm214 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_214.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm215 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_215.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm216 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_216.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm217 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_217.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm218 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_218.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm219 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_219.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm220 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_220.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm221 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_221.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm222 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_222.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm223 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_223.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm224 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_224.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm225 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_225.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm226 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_226.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm227 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_227.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm228 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_228.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm229 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_229.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm230 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_230.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm231 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_231.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm232 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_232.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm233 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_233.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm234 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_234.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm235 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_235.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm236 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_236.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm237 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_237.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm238 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_238.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm239 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_239.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm240 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_240.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm241 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_241.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm242 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_242.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm243 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_243.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm244 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_244.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm245 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_245.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm246 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_246.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm247 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_247.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm248 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_248.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm249 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_249.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm250 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_250.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm251 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_251.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm252 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_252.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm253 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_253.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm254 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_254.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm255 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_255.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm256 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_256.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm257 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_257.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm258 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_258.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm259 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_259.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm260 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_260.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm261 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_261.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm262 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_262.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm263 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_263.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm264 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_264.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm265 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_265.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm266 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_266.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm267 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_267.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm268 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_268.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm269 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_269.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm270 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_270.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm271 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_271.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm272 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_272.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm273 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_273.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm274 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_274.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm275 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_275.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm276 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_276.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm277 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_277.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm278 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_278.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm279 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_279.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm280 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_280.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm281 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_281.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm282 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_282.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm283 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_283.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm284 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_284.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm285 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_285.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm286 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_286.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm287 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_287.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm288 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_288.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm289 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_289.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm290 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_290.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm291 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_291.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm292 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_292.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm293 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_293.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm294 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_294.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm295 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_295.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm296 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_296.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm297 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_297.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm298 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_298.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm299 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_299.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm300 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_300.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm301 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_301.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm302 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_302.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm303 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_303.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm304 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_304.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm305 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_305.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm306 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_306.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm307 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_307.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm308 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_308.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm309 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_309.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm310 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_310.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm311 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_311.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm312 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_312.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm313 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_313.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm314 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_314.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm315 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_315.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm316 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_316.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm317 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_317.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm318 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_318.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm319 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_319.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm320 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_320.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm321 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_321.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm322 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_322.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm323 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_323.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm324 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_324.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm325 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_325.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm326 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_326.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm327 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_327.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm328 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_328.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm329 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_329.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm330 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_330.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm331 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_331.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm332 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_332.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm333 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_333.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm334 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_334.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm335 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_335.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm336 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_336.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm337 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_337.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm338 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_338.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm339 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_339.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm340 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_340.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm341 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_341.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm342 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_342.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm343 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_343.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm344 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_344.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm345 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_345.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm346 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_346.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm347 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_347.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm348 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_348.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm349 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_349.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm350 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_350.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm351 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_351.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm352 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_352.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm353 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_353.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm354 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_354.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm355 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_355.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm356 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_356.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm357 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_357.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm358 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_358.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm359 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_359.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm360 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_360.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm361 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_361.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm362 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_362.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm363 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_363.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm364 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_364.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm365 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_365.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm366 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_366.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm367 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_367.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm368 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_368.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm369 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_369.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm370 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_370.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm371 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_371.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm372 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_372.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm373 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_373.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm374 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_374.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm375 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_375.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm376 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_376.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm377 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_377.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm378 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_378.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm379 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_379.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm380 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_380.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm381 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_381.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm382 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_382.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm383 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_383.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm384 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_384.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm385 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_385.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm386 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_386.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm387 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_387.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm388 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_388.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm389 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_389.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm390 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_390.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm391 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_391.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm392 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_392.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm393 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_393.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm394 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_394.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm395 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_395.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm396 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_396.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm397 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_397.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm398 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_398.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm399 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_399.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm400 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_400.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm401 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_401.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm402 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_402.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm403 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_403.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm404 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_404.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm405 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_405.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm406 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_406.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm407 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_407.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm408 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_408.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm409 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_409.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm410 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_410.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm411 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_411.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm412 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_412.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm413 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_413.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm414 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_414.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm415 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_415.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm416 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_416.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm417 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_417.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm418 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_418.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm419 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_419.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm420 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_420.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm421 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_421.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm422 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_422.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm423 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_423.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm424 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_424.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm425 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_425.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm426 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_426.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm427 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_427.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm428 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_428.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm429 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_429.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm430 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_430.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm431 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_431.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm432 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_432.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm433 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_433.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm434 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_434.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm435 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_435.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm436 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_436.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm437 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_437.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm438 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_438.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm439 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_439.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm440 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_440.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm441 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_441.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm442 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_442.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm443 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_443.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm444 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_444.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm445 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_445.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm446 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_446.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm447 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_447.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm448 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_448.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm449 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_449.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm450 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_450.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm451 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_451.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm452 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_452.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm453 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_453.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm454 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_454.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm455 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_455.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm456 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_456.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm457 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_457.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm458 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_458.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm459 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_459.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm460 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_460.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm461 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_461.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm462 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_462.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm463 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_463.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm464 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_464.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm465 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_465.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm466 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_466.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm467 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_467.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm468 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_468.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm469 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_469.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm470 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_470.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm471 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_471.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm472 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_472.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm473 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_473.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm474 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_474.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm475 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_475.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm476 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_476.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm477 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_477.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm478 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_478.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm479 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_479.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm480 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_480.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm481 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_481.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm482 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_482.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm483 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_483.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm484 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_484.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm485 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_485.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm486 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_486.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm487 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_487.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm488 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_488.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm489 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_489.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm490 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_490.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm491 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_491.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm492 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_492.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm493 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_493.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm494 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_494.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm495 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_495.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm496 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_496.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm497 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_497.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm498 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_498.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm499 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_499.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm500 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_500.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm501 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_501.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm502 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_502.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm503 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_503.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm504 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_504.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm505 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_505.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm506 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_506.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm507 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_507.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm508 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_508.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm509 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_509.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm510 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_510.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm511 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_511.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm512 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_512.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm513 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_513.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm514 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_514.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm515 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_515.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm516 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_516.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm517 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_517.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm518 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_518.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm519 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_519.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm520 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_520.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm521 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_521.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm522 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_522.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm523 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_523.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm524 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_524.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm525 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_525.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm526 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_526.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm527 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_527.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm528 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_528.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm529 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_529.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm530 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_530.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm531 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_531.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm532 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_532.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm533 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_533.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm534 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_534.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm535 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_535.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm536 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_536.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm537 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_537.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm538 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_538.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm539 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_539.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm540 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_540.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm541 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_541.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm542 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_542.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm543 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_543.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm544 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_544.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm545 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_545.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#halm546 {
+    background: #ffffff url("../images/SBMPTN_SAINTEK/SBMPTN_SAINTEK_546.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#coversbmptnsos {
+    background: #ffffff url("../images/coversbmips.jpeg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln1 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_001.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln2 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_002.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln3 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_003.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln4 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_004.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln5 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_005.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln6 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_006.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln7 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_007.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln8 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_008.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln9 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_009.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln10 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_010.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln11 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_011.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln12 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_012.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln13 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_013.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln14 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_014.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln15 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_015.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln16 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_016.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln17 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_017.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln18 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_018.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln19 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_019.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln20 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_020.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln21 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_021.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln22 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_022.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln23 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_023.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln24 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_024.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln25 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_025.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln26 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_026.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln27 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_027.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln28 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_028.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln29 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_029.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln30 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_030.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln31 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_031.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln32 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_032.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln33 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_033.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln34 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_034.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln35 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_035.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln36 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_036.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln37 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_037.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln38 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_038.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln39 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_039.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln40 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_040.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln41 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_041.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln42 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_042.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln43 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_043.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln44 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_044.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln45 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_045.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln46 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_046.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln47 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_047.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln48 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_048.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln49 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_049.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln50 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_050.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln51 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_051.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln52 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_052.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln53 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_053.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln54 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_054.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln55 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_055.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln56 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_056.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln57 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_057.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln58 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_058.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln59 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_059.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln60 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_060.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln61 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_061.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln62 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_062.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln63 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_063.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln64 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_064.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln65 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_065.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln66 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_066.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln67 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_067.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln68 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_068.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln69 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_069.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln70 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_070.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln71 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_071.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln72 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_072.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln73 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_073.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln74 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_074.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln75 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_075.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln76 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_076.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln77 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_077.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln78 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_078.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln79 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_079.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln80 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_080.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln81 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_081.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln82 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_082.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln83 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_083.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln84 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_084.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln85 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_085.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln86 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_086.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln87 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_087.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln88 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_088.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln89 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_089.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln90 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_090.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln91 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_091.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln92 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_092.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln93 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_093.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln94 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_094.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln95 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_095.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln96 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_096.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln97 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_097.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln98 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_098.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln99 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_099.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln100 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_100.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln101 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_101.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln102 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_102.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln103 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_103.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln104 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_104.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln105 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_105.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln106 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_106.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln107 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_107.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln108 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_108.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln109 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_109.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln110 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_110.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln111 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_111.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln112 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_112.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln113 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_113.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln114 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_114.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln115 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_115.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln116 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_116.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln117 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_117.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln118 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_118.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln119 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_119.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln120 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_120.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln121 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_121.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln122 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_122.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln123 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_123.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln124 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_124.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln125 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_125.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln126 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_126.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln127 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_127.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln128 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_128.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln129 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_129.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln130 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_130.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln131 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_131.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln132 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_132.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln133 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_133.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln134 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_134.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln135 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_135.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln136 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_136.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln137 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_137.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln138 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_138.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln139 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_139.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln140 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_140.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln141 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_141.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln142 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_142.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln143 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_143.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln144 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_144.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln145 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_145.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln146 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_146.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln147 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_147.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln148 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_148.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln149 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_149.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln150 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_150.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln151 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_151.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln152 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_152.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln153 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_153.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln154 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_154.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln155 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_155.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln156 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_156.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln157 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_157.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln158 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_158.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln159 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_159.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln160 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_160.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln161 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_161.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln162 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_162.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln163 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_163.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln164 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_164.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln165 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_165.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln166 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_166.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln167 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_167.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln168 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_168.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln169 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_169.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln170 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_170.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln171 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_171.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln172 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_172.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln173 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_173.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln174 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_174.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln175 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_175.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln176 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_176.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln177 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_177.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln178 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_178.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln179 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_179.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln180 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_180.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln181 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_181.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln182 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_182.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln183 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_183.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln184 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_184.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln185 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_185.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln186 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_186.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln187 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_187.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln188 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_188.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln189 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_189.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln190 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_190.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln191 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_191.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln192 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_192.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln193 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_193.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln194 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_194.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln195 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_195.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln196 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_196.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln197 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_197.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln198 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_198.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln199 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_199.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln200 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_200.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln201 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_201.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln202 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_202.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln203 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_203.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln204 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_204.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln205 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_205.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln206 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_206.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln207 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_207.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln208 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_208.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln209 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_209.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln210 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_210.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln211 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_211.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln212 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_212.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln213 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_213.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln214 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_214.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln215 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_215.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln216 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_216.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln217 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_217.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln218 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_218.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln219 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_219.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln220 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_220.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln221 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_221.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln222 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_222.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln223 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_223.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln224 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_224.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln225 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_225.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln226 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_226.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln227 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_227.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln228 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_228.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln229 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_229.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln230 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_230.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln231 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_231.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln232 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_232.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln233 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_233.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln234 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_234.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln235 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_235.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln236 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_236.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln237 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_237.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln238 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_238.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln239 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_239.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln240 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_240.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln241 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_241.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln242 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_242.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln243 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_243.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln244 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_244.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln245 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_245.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln246 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_246.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln247 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_247.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln248 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_248.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln249 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_249.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln250 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_250.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln251 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_251.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln252 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_252.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln253 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_253.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln254 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_254.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln255 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_255.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln256 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_256.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln257 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_257.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln258 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_258.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln259 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_259.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln260 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_260.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln261 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_261.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln262 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_262.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln263 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_263.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln264 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_264.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln265 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_265.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln266 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_266.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln267 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_267.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln268 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_268.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln269 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_269.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln270 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_270.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln271 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_271.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln272 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_272.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln273 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_273.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln274 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_274.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln275 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_275.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln276 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_276.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln277 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_277.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln278 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_278.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln279 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_279.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln280 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_280.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln281 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_281.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln282 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_282.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln283 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_283.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln284 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_284.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln285 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_285.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln286 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_286.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln287 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_287.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln288 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_288.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln289 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_289.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln290 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_290.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln291 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_291.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln292 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_292.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln293 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_293.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln294 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_294.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln295 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_295.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln296 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_296.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln297 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_297.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln298 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_298.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln299 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_299.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln300 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_300.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln301 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_301.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln302 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_302.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln303 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_303.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln304 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_304.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln305 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_305.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln306 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_306.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln307 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_307.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln308 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_308.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln309 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_309.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln310 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_310.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln311 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_311.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln312 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_312.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln313 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_313.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln314 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_314.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln315 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_315.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln316 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_316.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln317 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_317.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln318 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_318.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln319 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_319.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln320 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_320.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln321 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_321.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln322 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_322.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln323 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_323.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln324 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_324.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln325 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_325.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln326 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_326.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln327 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_327.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln328 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_328.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln329 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_329.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln330 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_330.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln331 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_331.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln332 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_332.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln333 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_333.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln334 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_334.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln335 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_335.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln336 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_336.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln337 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_337.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln338 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_338.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln339 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_339.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln340 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_340.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln341 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_341.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln342 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_342.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln343 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_343.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln344 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_344.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln345 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_345.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln346 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_346.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln347 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_347.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln348 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_348.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln349 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_349.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln350 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_350.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln351 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_351.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln352 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_352.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln353 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_353.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln354 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_354.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln355 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_355.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln356 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_356.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln357 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_357.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln358 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_358.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln359 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_359.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln360 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_360.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln361 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_361.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln362 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_362.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln363 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_363.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln364 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_364.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln365 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_365.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln366 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_366.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln367 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_367.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln368 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_368.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln369 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_369.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln370 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_370.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln371 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_371.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln372 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_372.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln373 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_373.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln374 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_374.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln375 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_375.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln376 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_376.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln377 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_377.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln378 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_378.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln379 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_379.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln380 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_380.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln381 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_381.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln382 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_382.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln383 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_383.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln384 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_384.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln385 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_385.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln386 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_386.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln387 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_387.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln388 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_388.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln389 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_389.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln390 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_390.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln391 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_391.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln392 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_392.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln393 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_393.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln394 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_394.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln395 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_395.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln396 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_396.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln397 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_397.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln398 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_398.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln399 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_399.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln400 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_400.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln401 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_401.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln402 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_402.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln403 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_403.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln404 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_404.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln405 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_405.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln406 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_406.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln407 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_407.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln408 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_408.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln409 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_409.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln410 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_410.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln411 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_411.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln412 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_412.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln413 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_413.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln414 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_414.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln415 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_415.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln416 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_416.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln417 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_417.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln418 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_418.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln419 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_419.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln420 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_420.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln421 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_421.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln422 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_422.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln423 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_423.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln424 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_424.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln425 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_425.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln426 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_426.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln427 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_427.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln428 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_428.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln429 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_429.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln430 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_430.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln431 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_431.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln432 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_432.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln433 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_433.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln434 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_434.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln435 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_435.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln436 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_436.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln437 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_437.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln438 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_438.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln439 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_439.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln440 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_440.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln441 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_441.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln442 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_442.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln443 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_443.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln444 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_444.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln445 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_445.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln446 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_446.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln447 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_447.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln448 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_448.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln449 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_449.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln450 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_450.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln451 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_451.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln452 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_452.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln453 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_453.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln454 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_454.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln455 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_455.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln456 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_456.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln457 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_457.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln458 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_458.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln459 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_459.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln460 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_460.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln461 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_461.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln462 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_462.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln463 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_463.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln464 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_464.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln465 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_465.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln466 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_466.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln467 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_467.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln468 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_468.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln469 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_469.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln470 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_470.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln471 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_471.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln472 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_472.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln473 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_473.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln474 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_474.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln475 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_475.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln476 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_476.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln477 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_477.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln478 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_478.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln479 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_479.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln480 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_480.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln481 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_481.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln482 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_482.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln483 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_483.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln484 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_484.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln485 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_485.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln486 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_486.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln487 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_487.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln488 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_488.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln489 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_489.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln490 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_490.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln491 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_491.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln492 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_492.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln493 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_493.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln494 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_494.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln495 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_495.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln496 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_496.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln497 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_497.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln498 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_498.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln499 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_499.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln500 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_500.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln501 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_501.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln502 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_502.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln503 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_503.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln504 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_504.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln505 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_505.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln506 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_506.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln507 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_507.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln508 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_508.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln509 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_509.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln510 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_510.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln511 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_511.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln512 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_512.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln513 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_513.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln514 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_514.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln515 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_515.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln516 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_516.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln517 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_517.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln518 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_518.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln519 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_519.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln520 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_520.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln521 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_521.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln522 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_522.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln523 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_523.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln524 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_524.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln525 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_525.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln526 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_526.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln527 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_527.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln528 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_528.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln529 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_529.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln530 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_530.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln531 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_531.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln532 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_532.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln533 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_533.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln534 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_534.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln535 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_535.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln536 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_536.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln537 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_537.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln538 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_538.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln539 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_539.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln540 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_540.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln541 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_541.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln542 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_542.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln543 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_543.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln544 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_544.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln545 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_545.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln546 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_546.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln547 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_547.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln548 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_548.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln549 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_549.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln550 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_550.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln551 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_551.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln552 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_552.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln553 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_553.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln554 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_554.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln555 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_555.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln556 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_556.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln557 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_557.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln558 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_558.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln559 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_559.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln560 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_560.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln561 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_561.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln562 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_562.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln563 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_563.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln564 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_564.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln565 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_565.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln566 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_566.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln567 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_567.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln568 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_568.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln569 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_569.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln570 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_570.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln571 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_571.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln572 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_572.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln573 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_573.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln574 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_574.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln575 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_575.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln576 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_576.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln577 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_577.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln578 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_578.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln579 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_579.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln580 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_580.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln581 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_581.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln582 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_582.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln583 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_583.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln584 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_584.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln585 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_585.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln586 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_586.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln587 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_587.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln588 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_588.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln589 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_589.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln590 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_590.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln591 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_591.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln592 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_592.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln593 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_593.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln594 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_594.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln595 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_595.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln596 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_596.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln597 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_597.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln598 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_598.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln599 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_599.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln600 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_600.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln601 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_601.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln602 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_602.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln603 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_603.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln604 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_604.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln605 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_605.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln606 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_606.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln607 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_607.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln608 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_608.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln609 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_609.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln610 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_610.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln611 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_611.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln612 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_612.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln613 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_613.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#haln614 {
+    background: #ffffff url("../images/SBMPTN_SOSHUM/SBMPTN_SOSHUM_614.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.feature {
+    padding: 1em 1em;
+    font-family: 'BebasNeueRegular', sans-serif;
+    height: 500px;
+    width: 400px;
+    background: white;
+}
+
+.feature h1,
+.feature h2 {
+    font-family: 'BebasNeueRegular', sans-serif;
+    font-size: 38px;
+    color: black;
+}
+
+.wowbook-page .feature.pagefx p {
+    font-size: 22px;
+}
+
+.wowbook-page .feature.pagefx .subtitle {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.wowbook-page .feature.pagefx h1 {
+    font-size: 48px;
+    color: #aa2b2b;
+    background: none;
+    line-height: 0.7;
+    padding: 5px 0px 0px;
+    margin: 0;
+}
+
+.easy {
+    background: #ffffff url("../images/easy.png") no-repeat left top;
+    background-size: 200% 100%;
+    zoom: 1;
+    font-size: 1.5em;
+    font-family: lato;
+}
+
+.easy h1,
+.easy p,
+.easy .subtitle {
+    display: none;
+}
+
+.wowbook-right .easy {
+    background-position: right top;
+}
+
+.design {
+    background: #ffffff url("../images/design.png") no-repeat;
+    background-size: 200% 100%;
+}
+
+.design h1 {
+    background: none;
+    text-indent: -10000px;
+    color: #88bfbf;
+    text-shadow: 1px 1px 0px #447f7f;
+    font-size: 144px;
+    line-height: 0.8;
+    border-bottom: 2px solid #88bfbf;
+}
+
+.design .subtitle {
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #333;
+    position: absolute;
+    top: 27%;
+}
+
+.wowbook-right .design {
+    background-position: right top;
+}
+
+.wowbook-right .design p {
+    text-align: right;
+    position: absolute;
+    bottom: 1.5em;
+    font-size: 30px;
+    padding-right: 1em;
+}
+
+.responsive pp {
+    font-size: 16px;
+}
+
+.responsive hh2 {
+    font-size: 20px;
+}
+
+.responsive h1 {
+    color: white;
+}
+
+.thumbnails p {
+    font-size: 16px;
+}
+
+.thumbnails h2 {
+    font-size: 20px;
+}
+
+.thumbnails h1 {
+    color: white;
+}
+
+#thumbs_holder {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    left: 0;
+    z-index: 10000;
+}
+
+#thumbs_holder .wowbook-thumbnails {
+    background: none repeat scroll 0 0 #222;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    border-top: 1px solid white;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid gray;
+    border-bottom-color: rgba(64, 64, 64, 0.5);
+    box-shadow: 0 0 20px #aa2b2b;
+    padding: 10px 0;
+    position: relative;
+}
+
+#thumbs_holder .wowbook-button {
+    background-color: #AA2B2B;
+}
+
+.wowbook-thumbnails {
+    background: none repeat scroll 0 0 #888;
+    background: none repeat scroll 0 0 rgba(128, 128, 128, 0.48);
+    border-top: 1px solid white;
+    border-top-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid gray;
+    border-bottom-color: rgba(64, 64, 64, 0.5);
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.48);
+}
+
+.wowbook-horizontal.wowbook-thumbnails {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wowbook-vertical .wowbook-thumbnail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#thumbs_type,
+#thumbs_position,
+#thumbs_size {
+    text-align: center;
+}
+
+#thumbs_position button {
+    width: 49%;
+}
+
+#zoom-feature {
+    background: #ffffff url("../images/zoom.jpg") no-repeat;
+    background-size: 200% 100%;
+}
+
+#zoom-feature h1 {
+    font-size: 100px;
+    color: #333;
+    background: none;
+    line-height: 1.1;
+    padding: 5px 0px 0px;
+    text-align: right;
+}
+
+#zoom-feature2 {
+    background-color: white;
+    background-image: url("../images/zoom.jpg");
+    background-size: 200% 100%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+.deeplinking {
+    color: white;
+    background: url("../images/chain.jpg") no-repeat;
+    background-size: 200% 100%;
+}
+
+.deeplinking h1 {
+    color: white;
+    background: #3d567d !important;
+}
+
+.deeplinking a,
+.deeplinking a:active,
+.deeplinking a:visited {
+    color: #f8f8f8;
+    text-decoration: underline;
+}
+
+.wowbook-right .deeplinking {
+    background-position: top right;
+}
+
+.wowbook-page .feature.numbering {
+    background: url("../images/numbering.png") #ffffff no-repeat;
+    background-size: 100% 100%;
+}
+
+.wowbook-page .feature.numbering h1 {
+    color: #AA2B2B;
+    background: none;
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wowbook-page .feature.numbering p {
+    font-size: 23px;
+}
+
+.wowbook-page .feature.numbering .wowbook-page-number {
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.wowbook-page .feature.slideshow h1 {
+    color: #AA2B2B;
+    background: none;
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wowbook-page .feature.slideshow a {
+    display: block;
+    text-align: center;
+}
+
+.wowbook-page .feature.flash {
+    background: url("../images/flash.png") #ffffff no-repeat;
+    background-size: 200% 100%;
+    padding-top: 42%;
+    /* 170px/400px */
+}
+
+.wowbook-page .feature.flash p {
+    font-size: 20px;
+    padding: 0.7em;
+}
+
+.wowbook-page .feature.flash h1 {
+    display: none;
+}
+
+.feature.flash-demo {
+    background: url("../images/flash.png") #ffffff no-repeat;
+    background-position: top right;
+    background-size: 200% 100%;
+    padding-top: 25%;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.more {
+    background: url("../images/more.png") #ffffff no-repeat;
+    background-size: 200% 100%;
+    padding-top: 30px;
+}
+
+.more h1 {
+    display: none;
+}
+
+.more ul {
+    margin-left: 1em;
+}
+
+.more li {
+    margin-bottom: 0.7em;
+}
+
+.last_cover {
+    padding: 0;
+}
+
+.wowbook-right .more {
+    background-position: top right;
+}
